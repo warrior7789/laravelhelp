@@ -1,0 +1,116 @@
+role
+   id 		     int(11)  AUTO_INCREMENT 
+   name 	     varchar(255)   // admin  or customer or service provider
+   display_name  varchar(255)
+   created_at    timestamp
+   updated_at 	 timestamp
+
+skill
+   id 		     int(11)  AUTO_INCREMENT 
+   name 	     varchar(255)   // admin  or normal user
+   description   text
+   avtar 		 varchar(255)
+   created_at    timestamp
+   updated_at 	 timestamp
+   deleted_at 	 timestamp
+
+currency 
+	id 		     int(11)  AUTO_INCREMENT 
+	name 	     varchar(255)   
+	iso_code 	 varchar(3)
+	status       tinyint(1)
+	symbol       varchar(8)
+	deleted_at 	 timestamp
+	created_at   timestamp
+	updated_at 	 timestamp
+
+					
+
+users 
+	id             int(11)  AUTO_INCREMENT 
+	role_id 	   int(11)  FK
+	name 		   varchar(255)
+	email 		   varchar(255)
+	avtar 		   varchar(255)
+	password 	   varchar(255)
+	remember_token varchar(255)
+	status         tiny_int(1)
+	provider       varchar(255)  // google,facebook login 
+	provider_id    varchar(255)  // google/facebook user id
+	access_token   varchar(255)
+	created_at     timestamp
+	updated_at     timestamp
+
+profile	
+	id             int(11)  AUTO_INCREMENT
+	users_id       int(11)  FK
+	about          text 	 
+	phone 		   varchar(15)
+	address 	   text	
+	pincode        varchar(15)
+	city    	   int(11)			
+	state   	   int(11)
+	country 	   int(11)
+
+availability
+	id             int(11)  AUTO_INCREMENT
+	users_id       int(11)  FK
+	day_name       varchar(10)  option (monday,tuesday,wednesday,....)
+	from 		   int(11)
+	to 			   int(11)	
+	created_at     timestamp
+	updated_at     timestamp
+
+
+photogallary
+   id
+   user_id
+   title
+   status
+   reated_at     timestamp
+   updated_at     timestamp
+
+
+tags
+    id           int(11)  AUTO_INCREMENT 
+    users_id 	 int(11)  FK
+    tag_name 	 varchar(255) 
+
+sp_skill
+	id           	int(11)  AUTO_INCREMENT 
+	users_id 	 	int(11)  FK
+	skill_id 	 	int(11)  FK
+	description  	text	
+	price_per_hour	int(11)
+	price_per_day 	int(11)
+	show_price   	varchar(10) hour/day
+	offer_discount  int(3) (percentage)
+	offer_desc      text
+	offer_img       varchar(255)
+	offer_start_date int(11)
+	offer_end_date   int(11)
+    currency	    int(11)
+	status          tiny_int(1)	
+	created_at      timestamp
+	updated_at      timestamp 	
+
+rating
+	id           int(11)  AUTO_INCREMENT
+	sp_id 	     int(11)  FK
+	rating       float(10,2) 
+	customer_id  int(11)  FK
+	review       text
+	created_at   timestamp
+	updated_at   timestamp 
+
+message (one to one chat only)
+	id           int(11)  AUTO_INCREMENT
+	from		 int(11)  FK
+	to 			 int(11)  FK
+	message      text 
+	file 		 varchar(255)
+	from_delete  tinyint(1)  default 0
+	to_delete    tinyint(1)  default 0
+	read         tinyint(1)
+	create_at 	 timestamp
+	updated_at   timestamp

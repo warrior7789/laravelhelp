@@ -1,0 +1,229 @@
+
+FTP:
+185.20.13.60
+helpii
+AllaboutData#1
+
+https://185.20.13.60:2083
+user: helpii
+Pass: AllaboutData#1
+
+
+
+helpii.hemsida.eu
+
+db:  helpii_helpii
+user :  helpii_helpii
+password : WTkk9;wENxxx
+
+email:
+Url: https://helpii.se/webmail
+Username: helpiiadmin@helpii.se
+Password: D)R61EY~(j!&
+
+
+
+Hellpi Project Credentials
+==== Local==================
+https://www.helpii.com
+Service Provider
+nikhil@joomlaxtension.com/123456
+
+Customer
+cust@cust.com/123456
+
+Admin
+admin@admin.com/secret
+
+========== Live=================
+https://www.helpii.se
+
+Service Provider
+hiren@raindropsinfotech.com/123456
+
+Customer
+customer@customer.com/123456
+
+Admin
+admin@admin.com/secret
+
+============================================
+
+RewriteEngine On 
+
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^helpii.hemsida.eu [NC]
+RewriteRule ^(.*)$ http://www.helpii.hemsida.eu/$1 [L,R=301,NC]
+
+
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+   # RewriteCond %{HTTPS} !=on
+  
+  #    RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^helpii.hemsida.eu [NC]
+    RewriteRule ^(.*)$ https://www.helpii.hemsida.eu/$1 [L,R=301,NC]
+    RewriteRule ^(.*)$ public/$1 [L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm7A0m8kJy7r6muet_zaV27HyixP_XPLs&libraries=places&language=sv&region=SE" async="" defer=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+completed page list 
+
+
+1) http://www.helpii.hemsida.eu/  (home page ) 
+
+2) login with facebook not work right now because we want https site and facebook APP key and Secret
+
+3) login in with google is done 
+
+4) searching result page  http://www.helpii.hemsida.eu/search
+
+5) http://www.helpii.hemsida.eu/profile/mahesh-chomal  (service provider details page guest user end view )
+	
+	tab wise 
+ 	1)  Profile tab 
+ 	2)  photo tab 
+ 	3)  services tab 
+ 	4)  feedback Tab (service provider skill wise customer can give feedback)
+
+
+6) http://www.helpii.hemsida.eu/contact    cuntact us page implement google v3 captcha auto detect robort
+
+
+
+After login with service provider
+
+7)  http://www.helpii.hemsida.eu/account   
+	
+	there is 5 tab 
+	   1) user infromation update tab 
+	   2) skill listing tab 
+	   3) Availability tab 
+	   4) gallary tab 
+	   5) profile tab
+
+8) http://www.helpii.hemsida.eu/spskill
+	it will list all skill  of perticular loged service provider.
+
+
+9) http://www.helpii.hemsida.eu/inbox
+	working on this module 
+	chat between service provider and customer .
+	for this we implement websocket of https://pusher.com/
+=======================================================================
+
+Admin details 
+
+
+http://www.helpii.hemsida.eu/administrator
+user: admin@admin.com
+passwrd : secret
+
+
+
+
+==========================================================================
+what wee want from the client 
+
+1) google login details 
+
+	https://console.developers.google.com
+
+	for google login and for google  capctcha  
+
+
+2) for login with facebook site must be run on https 
+
+	https://developers.facebook.com
+
+	we want app id and secret . for that we want facebook acount .
+
+3) Google APi key for 
+	geo location/ google place search api
+	 right now google give 300 credit free and limit no. of call to api after we want API key for search area. 
+
+
+4) https://pusher.com/
+	used for chat aplication real time chat (pending task)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	127.0.0.1	localhost
+127.0.1.1	raindrops30-System-Product-Name
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+192.168.1.37 chromefalgar-yii.com
+192.168.1.37 www.chromefalgar-yii.com
+
+
+192.168.1.37 lsh.com
+192.168.1.37 www.lsh.com
+
+
+
+192.168.1.37 helpii.com
+192.168.1.37 www.helpii.com
+
+192.168.1.37 mv.com
+192.168.1.37 www.mv.com
+
+192.168.1.152 speedtalker.dev.com
+192.168.1.152 www.speedtalker.dev.com
+
+
+192.168.1.49 boilingpoint1.com
+192.168.1.49 www.boilingpoint1.com

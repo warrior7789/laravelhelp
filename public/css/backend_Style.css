@@ -1,0 +1,47 @@
+*{font-family: 'Open Sans', sans-serif;}
+
+.dropdown-menu .dropdown-item{padding: 4px 20px;}
+.rightA .btn-success{margin-bottom:15px;}
+.header-fixed .app-header{background-color:#49a8d7;font-weight: 700;}
+.app-header .navbar-toggler{background: #fff;margin-right: 10px;}
+.app-header .navbar-nav .nav-link{color: #fff;}
+.app-header .navbar-nav a i{font-size: 20px;}
+.animated .table tr th{white-space: nowrap;}
+.app-header .nav.navbar-nav.ml-auto{margin-right: 20px;}
+/*.sidebar .nav-title{padding-left: 48px;}
+*/.app-header .dropdown-item{font-size: 14px;}
+.btn-toolbar a{margin-bottom: 0;}
+.card-title.mb-0{padding-top: 5px;}
+/*.sidebar-nav.ps li:nth-child(6) a,.sidebar-nav.ps li:nth-child(7) a{padding-left: 48px;}
+*/.brand-minimized .sidebar-nav li:nth-child(6) a,.brand-minimized .sidebar-nav li:nth-child(7) a{padding-right:0px;text-align: center;font-size:10px;}
+.brand-minimized .sidebar-nav li:nth-child(6):hover a,.brand-minimized .sidebar-nav li:nth-child(7):hover a{font-size:80%}
+.table-responsive{margin-bottom: 10px;}
+.skilltable tr:first-child,.currencytable tr:first-child{background-color:#49a8d7;}
+.skilltable tr:first-child th,.currencytable tr:first-child th{color:#fff;}
+.skilltable tr td img{width:50px;height:50px;}
+.skilltable , .currencytable{background-color: #fff;}
+.leftA{float:left;}
+.rightA{float:right;}
+.sidebar .sidebar-nav .nav-dropdown-items li a{padding-left: 10px;}
+.nav-title i,.sidebar .nav-link .nav-icon{font-size: .875rem;color: #fff;}
+.sidebar .nav-link{font-weight: bold;font-size:80%;text-transform: uppercase;}
+.btn.btn-danger{margin-left: 10px;}
+.page-content.container-fluid{padding: 0;}
+.page-title{font-weight: bold;font-size:30px;padding-bottom: 20px;}
+.breadcrumb{box-shadow: 0px 0px 8px #b8b8b8;}
+.spaceAlign{margin-bottom: 20px;}
+.Inp input{width: 50%;border: 1px solid #444;}
+.animated .seboX{background-color: #fff;padding:20px;box-shadow: 0px 0px 8px #b8b8b8;}
+.seboX{font-weight: 600;color: #444;font-size: 14px;}
+.chooseFile input{border:1px solid #e4e5e6;background-color: #e4e5e6;}
+#breadcrumb-dropdown-1{background-color:#49a8d7;color: #fff;border-radius: 5px;padding:5px 10px;}
+.breadcrumb-item{padding-top: 5px;}
+.navbar-toggler.sidebar-toggler.d-lg-none.mr-auto{margin-left: 10px;}
+.homesearch{width: 100%;float: left;}
+
+
+@media screen and (max-width:767px)
+{
+.card-title.mb-0{padding-bottom: 15px;}	
+}
+

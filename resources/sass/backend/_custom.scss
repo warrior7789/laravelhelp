@@ -1,0 +1,8 @@
+// Here you can add other styles
+@import '~simple-line-icons/scss/simple-line-icons';
+
+// Fix mobile footer
+.app-footer {flex: 0 0; padding-top: map-get($spacers, 3); padding-bottom: map-get($spacers, 3); }
+.serach-sp{margin:10px 0;}
+.serach-sp .form-group{margin-right:10px;}
+.serach-sp button{margin-right: 5px;}

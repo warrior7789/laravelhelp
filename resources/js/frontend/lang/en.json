@@ -1,0 +1,45 @@
+{
+	"en": {
+		"message": {
+			"search": "Search",
+			"view_full_portfolio": "View Full Portfolio",
+			"select_where": "Please select place",
+			"select_what": "Please select what you search",
+			"messages": "Message",
+			"chat_with": "Chat With",
+			"Type_message": "Type your message...",
+			"view_profile": "View Profile",
+			"clear_chat": "Clear Chat",
+			"block": "Block",
+			"Search_user": "Search User",
+			"no_conversation": "No Conversation Sync. Please Search Service Provider And Start Chat",
+			"no_friend_select": "Select Friend",
+			"welcome_to_helpii": "Welcome To Helpii"			
+		}
+	},
+	"sv": {
+		"message": {
+			"search": "Search",
+			"view_full_portfolio": "View Full Portfolio",
+			"select_where": "Please select place",
+			"select_what": "Please select what you search",
+			"messages": "Message",
+			"chat_with": "Chat With",
+			"Type_message": "Type your message...",
+			"view_profile": "View Profile",
+			"clear_chat": "Clear Chat",
+			"block": "Block",
+			"Search_user": "Search User",
+			"no_conversation": "No Conversation Sync. Please Search Service Provider And Start Chat",
+			"no_friend_select": "Select Friend",
+			"welcome_to_helpii": "Welcome To Helpii",
+			"download": "Download",
+			"previous":"Previous",
+			"next":"Next",
+			"send":"Send",
+			"to":"to",
+			"close":"Close",
+			"invalid_file":"Invalid File"
+		}
+	}
+}

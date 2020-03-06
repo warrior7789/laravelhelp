@@ -1,0 +1,111 @@
+-> After Registration redirect to registration page
+=> DONE
+
+-> Registration page - change tabindex
+=> DONE
+
+-> Switch Dialog
+	- add "OR" between buttons - DONE
+	- Switch Role = Choose Profile - DONE
+	- Show only once after the confirm email - DONE
+=> DONE
+
+-> after adding/edit/delete the skill/photos etc.. tabs menu remain same (Redirect on account page with active tab)
+=> DONE
+
+-> chat message 
+	- on enter add new line - DONE
+	- send button design big - DONE
+=> DONE
+
+-> login page - social media buttons design and page layout
+=> DONE
+
+-> backend
+	- service provider menu under the access menu - DONE
+	- user management = customer management - DONE
+	- delete user/sp logic - DONE
+	- listing design and search design - DONE
+=> DONE
+
+-> search page - add not working (change folder name of ads)
+=> DONE
+
+-> no result search msg change - .....within mentioned skills and place
+=> DONE
+
+-> photos - no photo avilabe msg
+=> DONE
+
+-> feedback - no feedback avilabe msg
+=> DONE
+
+-> price per hour/day - no limit
+=> DONE
+
+-> default images for
+	- profile/avtar image
+	- background image (check in responsive also)
+
+-> notifications - when send message
+	- send email if sp is offline
+
+-> contact us page - which email is used
+
+
+
+
+File paths:
+----------
+/var/www/html/helpii/.env
+
+/var/www/html/helpii/routes/frontend/home.php
+/var/www/html/helpii/routes/backend/auth.php
+
+/var/www/html/helpii/resources/js/frontend/components/*
+
+/var/www/html/helpii/app/Http/Controllers/Frontend/Auth/RegisterController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/Auth/LoginController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/Auth/UpdatePasswordController.php
+
+/var/www/html/helpii/app/Http/Controllers/Frontend/User/ProfileController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/User/PhotogallaryController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/User/SpavailabilityController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/User/SpskillController.php
+/var/www/html/helpii/app/Http/Controllers/Frontend/User/MessageController.php
+
+/var/www/html/helpii/app/Http/Controllers/Backend/AdsController.php
+/var/www/html/helpii/app/Http/Controllers/Backend/ServiceproviderController.php
+/var/www/html/helpii/app/Http/Controllers/Backend/SpskillController.php
+/var/www/html/helpii/app/Http/Controllers/Backend/Auth/User/UserController.php
+
+/var/www/html/helpii/resources/lang/en/labels.php
+
+/var/www/html/helpii/resources/views/frontend/auth/register.blade.php
+/var/www/html/helpii/resources/views/frontend/auth/login.blade.php
+
+/var/www/html/helpii/resources/views/frontend/user/dashboard.blade.php
+/var/www/html/helpii/resources/views/frontend/user/account.blade.php
+
+/var/www/html/helpii/resources/views/frontend/userdetailsTab/photo.blade.php
+/var/www/html/helpii/resources/views/frontend/userdetailsTab/feedback.blade.php
+
+/var/www/html/helpii/resources/views/frontend/userdetails.blade.php
+/var/www/html/helpii/resources/views/frontend/service.blade.php
+/var/www/html/helpii/resources/views/frontend/index.blade.php
+/var/www/html/helpii/resources/views/frontend/contact.blade.php
+/var/www/html/helpii/resources/views/frontend/about.blade.php
+
+/var/www/html/helpii/resources/views/includes/partials/messages.blade.php
+
+/var/www/html/helpii/resources/views/frontend/mail/offlineMessage.blade.php
+
+/var/www/html/helpii/resources/views/backend/ads/index.blade.php
+/var/www/html/helpii/resources/views/backend/ads/create.blade.php
+/var/www/html/helpii/resources/views/backend/auth/user/index.blade.php
+/var/www/html/helpii/resources/views/backend/serviceprovider/index.blade.php
+/var/www/html/helpii/resources/views/backend/includes/header.blade.php
+
+/var/www/html/helpii/app/Models/Auth/User.php
+/var/www/html/helpii/app/Models/Auth/Traits/Attribute/UserAttribute.php
+
